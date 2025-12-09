@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout('Редактировать отзыв', ~{::section})}">
+<section>
+    <h1>Редактировать отзыв</h1>
+    <form th:action="@{|/reviews/${review.id}|}" method="post" th:object="${review}" class="card">
+        <label>Пользователь
+            <input type="text" th:field="*{userName}" required>
+        </label>
+        <label>Товар
+            <input type="text" th:field="*{product}" required>
+        </label>
+        <label>Рейтинг (1-5)
+            <input type="number" min="1" max="5" th:field="*{rating}" required>
+        </label>
+        <button class="btn" type="submit">Сохранить</button>
+        <a class="btn secondary" th:href="@{/reviews}">Отмена</a>
+    </form>
+</section>
+</html>
+
+
+
+

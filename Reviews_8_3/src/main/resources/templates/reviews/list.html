@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/extras/spring-security"
+      th:replace="~{fragments/layout :: layout('Отзывы', ~{::section})}">
+<section>
+    <h1>Отзывы</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Пользователь</th>
+            <th>Товар</th>
+            <th>Рейтинг</th>
+            <th sec:authorize="hasRole('ADMIN')">Действия</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="r : ${reviews}">
+            <td th:text="${r.id}"></td>
+            <td th:text="${r.userName}"></td>
+            <td th:text="${r.product}"></td>
+            <td th:text="${r.rating}"></td>
+            <td sec:authorize="hasRole('ADMIN')">
+                <a class="btn" th:href="@{|/reviews/${r.id}/edit|}">Редактировать</a>
+                <form th:action="@{|/reviews/${r.id}/delete|}" method="post" style="display:inline">
+                    <button class="btn danger" type="submit">Удалить</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div sec:authorize="hasRole('ADMIN')">
+        <h2>Добавить отзыв</h2>
+        <form th:action="@{/reviews}" method="post" th:object="${review}" class="card">
+            <label>Пользователь
+                <input type="text" th:field="*{userName}" required>
+            </label>
+            <label>Товар
+                <input type="text" th:field="*{product}" required>
+            </label>
+            <label>Рейтинг (1-5)
+                <input type="number" min="1" max="5" th:field="*{rating}" required>
+            </label>
+            <button class="btn" type="submit">Сохранить</button>
+        </form>
+    </div>
+</section>
+</html>
+
+
+
+

@@ -1,0 +1,14 @@
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\Main.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\reviews\config\DataInitializer.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\reviews\controller\ReviewController.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\reviews\controller\ReviewRestController.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\reviews\domain\Review.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\reviews\repo\ReviewRepository.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\reviews\service\ReviewService.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\security\config\SecurityConfig.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\security\controller\AuthController.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\security\domain\AppUser.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\security\domain\Role.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\security\repo\AppUserRepository.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\security\repo\RoleRepository.java
+C:\MarmaL4de\Programs\JetBrains\IntelliJ\java_scripts\Reviews_8_3\src\main\java\com\security\service\UserService.java
