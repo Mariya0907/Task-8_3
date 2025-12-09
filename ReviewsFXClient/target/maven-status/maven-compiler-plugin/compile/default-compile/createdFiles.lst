@@ -1,0 +1,5 @@
+com\reviewsfx\controller\ReviewController.class
+com\reviewsfx\model\Review.class
+com\reviewsfx\service\ReviewApiService$1.class
+com\reviewsfx\service\ReviewApiService.class
+com\reviewsfx\Main.class
